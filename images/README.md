@@ -334,7 +334,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You have an Azure subscription named Subscription1 that is linked to a hybrid Azure Active Directory (Azure AD) tenant. You have an on-premises datacenter that does NOT have a VPN connection to Subscription1. The datacenter contains a computer named Server1 that has Microsoft SQL Server 2016 installed. Server1 is prevented from accessing the internet. An Azure logic app named LogicApp1 requires write access to a database on Server1. You need to recommend a solution to provide LogicApp1 with the ability to access Server1. What should you recommend deploying on-premises and in Azure?
 
-![Question 28](images/question28.jpg)
+![Question 28](images/question28.png)
 
 - [ ] On-premises: An On-premises data gateway. Azure: An enterprise application.
 - [x] On-premises: An On-premises data gateway. Azure: A connection gateway resource.
@@ -506,5 +506,486 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Azure subscription: Azure Files. On-premises network: Azure Data Box Gateway.
 - [ ] Azure subscription: Azure Data Lake Storage. On-premises network: Azure File Sync.
 - [ ] Azure subscription: Azure Data Box Gateway. On-premises network: Azure Blob Storage.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains a custom application named Application1. Application1 was developed by an external company named Fabrikam, Ltd. Developers at Fabrikam were assigned role-based access control (RBAC) permissions to the Application1 components. All users are licensed for the Microsoft 365 E5 plan. You need to recommend a solution to verify whether the Fabrikam developers still require permissions to Application1. The solution must meet the following requirements: To the manager of the developers, send a monthly email message that lists the access permissions to Application1. If the manager does not verify an access permission, automatically revoke that permission. Minimize development effort. What should you recommend?
+
+- [x] In Azure Active Directory (Azure AD), create an access review of Application1.
+- [ ] Create an Azure Automation runbook that runs the Get-AzRoleAssignment cmdlet.
+- [ ] In Azure Active Directory (Azure AD) Privileged Identity Management, create a custom role assignment for the Application1 resources.
+- [ ] Create an Azure Automation runbook that runs the Get-AzureADUserAppRoleAssignment cmdlet.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription. The subscription has a blob container that contains multiple blobs. Ten users in the finance department of your company plan to access the blobs during the month of April. You need to recommend a solution to enable access to the blobs during the month of April only. Which security solution should you include in the recommendation?
+
+- [x] shared access signatures (SAS).
+- [ ] Conditional Access policies.
+- [ ] certificates.
+- [ ] access keys.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure Active Directory (Azure AD) tenant that syncs with an on-premises Active Directory domain.You have an internal web app named WebApp1 that is hosted on-premises. WebApp1 uses Integrated Windows authentication. Some users work remotely and do NOT have VPN access to the on-premises network. You need to provide the remote users with single sign-on (SSO) access to WebApp1. Which two features should you include in the solution? Each correct answer presents part of the solution
+
+- [x] Azure AD Application Proxy
+- [ ] Azure AD Privileged Identity Management (PIM)
+- [x] Conditional Access policies
+- [ ] Azure Arc
+- [ ] Azure AD enterprise applications
+- [ ] Azure Application Gateway
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure Active Directory (Azure AD) tenant named contoso.com that has a security group named Group1. Group1 is configured for assigned membership. Group1 has 50 members, including 20 guest users. You need to recommend a solution for evaluating the membership of Group1. The solution must meet the following requirements: The evaluation must be repeated automatically every three months. Every member must be able to report whether they need to be in Group1. Users who report that they do not need to be in Group1 must be removed from Group1 automatically. Users who do not report whether they need to be in Group1 must be removed from Group1 automatically. What should you include in the recommendation?
+
+- [ ] Implement Azure AD Identity Protection.
+- [ ] Change the Membership type of Group1 to Dynamic User.
+- [x] Create an access review.
+- [ ] Implement Azure AD Privileged Identity Management (PIM).
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You plan to deploy Azure Databricks to support a machine learning application. Data engineers will mount an Azure Data Lake Storage account to the Databricks file system. Permissions to folders are granted directly to the data engineers. You need to recommend a design for the planned Databrick deployment. The solution must meet the following requirements: Ensure that the data engineers can only access folders to which they have permissions. Minimize development effort. Minimize costs. What should you include in the recommendation?
+
+![Question 51](images/question51.png)
+
+- [ ] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
+- [x] Databricks SKU: Standard. Cluster configuration: Credential passthrough.
+- [ ] Databricks SKU: Standard. Cluster configuration: Secret scope.
+- [ ] Databricks SKU: Premium. Cluster configuration: Managed identities.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You plan to deploy an Azure web app named App1 that will use Azure Active Directory (Azure AD) authentication.App1 will be accessed from the internet by the users at your company. All the users have computers that run Windows 10 and are joined to Azure AD.You need to recommend a solution to ensure that the users can connect to App1 without being prompted for authentication and can access App1 only from company-owned computers
+
+![Question 52](images/question52.png)
+
+- [ ] The users can connect to App1 without being prompted for authentication: Azure AD Application Proxy. The users can access App1 only from company-owned computers: Azure Application Gateway.
+- [ ] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: Azure Application Gateway.
+- [x] The users can connect to App1 without being prompted for authentication: An Azure AD app registration. The users can access App1 only from company-owned computers: A Conditional Access policy.
+- [ ] The users can connect to App1 without being prompted for authentication: An Azure AD managed identity. The users can access App1 only from company-owned computers: A Conditional Access policy.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is being deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic.
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Network Watcher to run IP flow verify to analyze the network traffic. Does this meet the goal?
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription. The subscription contains Azure virtual machines that run Windows Server 2016 and Linux. You need to use Azure Monitor to design an alerting strategy for security-related events. Which Azure Monitor Logs tables should you query?
+
+![Question 56](images/question56.png)
+
+- [ ] Events from Windows event logs: Syslog. Events from Linux system logging: Event.
+- [ ] Events from Windows event logs: AzureActivity. Events from Linux system logging: AzureDiagnostics.
+- [ ] Events from Windows event logs: AzureDiagnostics. Events from Linux system logging: Syslog.
+- [x] Events from Windows event logs: Event. Events from Linux system logging: Syslog.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are designing a large Azure environment that will contain many subscriptions. You plan to use Azure Policy as part of a governance solution. To which three scopes can you assign Azure Policy definitions?
+
+- [x] Azure Active Directory (Azure AD) administrative units.
+- [ ] Azure Active Directory (Azure AD) tenants.
+- [x] Subscriptions.
+- [ ] Compute resources.
+- [ ] Resource groups.
+- [x] Management groups.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your on-premises network contains a server named Server1 that runs an ASP.NET application named App1. You have a hybrid deployment of Azure Active Directory (Azure AD). You need to recommend a solution to ensure that users sign in by using their Azure AD account and Azure Multi-Factor Authentication (MFA) when they connect to App1 from the internet. Which three features should you recommend be deployed and configured in sequence?
+
+![Question 58](images/question58.png)
+
+- [ ] Box 1: a public Azure Load Balancer. Box 2: an Azure AD enterprise application. Box 3: a Conditional Access policy.
+- [ ] Box 1: an Azure App Service plan. Box 2: a managed identity. Box 3: Azure AD Application Proxy.
+- [x] Box 1: Azure AD Application Proxy. Box 2: an Azure AD enterprise application. Box 3: a Conditional Access policy.
+- [ ] Box 1: an internal Azure Load Balancer. Box 2: a Conditional Access policy. Box 3: Azure AD Application Proxy.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
+
+- [x] Azure Activity Log.
+- [ ] Azure Advisor.
+- [ ] Azure Analysis Services.
+- [ ] Azure Monitor action groups.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have 100 servers that run Windows Server 2012 R2 and host Microsoft SQL Server 2014 instances. The instances host databases that have the following characteristics: Stored procedures are implemented by using CLR. The largest database is currently 3 TB. None of the databases will ever exceed 4 TB. You plan to move all the data from SQL Server to Azure. You need to recommend a service to host the databases. The solution must meet the following requirements: Whenever possible, minimize management overhead for the migrated databases. Ensure that users can authenticate by using Azure Active Directory (Azure AD) credentials. Minimize the number of database changes required to facilitate the migration. What should you include in the recommendation?
+
+- [ ] Azure SQL Database elastic pools.
+- [x] Azure SQL Managed Instance.
+- [ ] Azure SQL Database single databases.
+- [ ] SQL Server 2016 on Azure virtual machines.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains an Azure Blob Storage account named store1. You have an on-premises file server named Server1 that runs Windows Server 2016. Server1 stores 500 GB of company files. You need to store a copy of the company files from Server1 in store1. Which two possible Azure services achieve this goal?
+
+- [ ] An Azure Logic Apps integration account.
+- [x] An Azure Import/Export job.
+- [x] Azure Data Factory.
+- [ ] An Azure Analysis services On-premises data gateway.
+- [ ] An Azure Batch account.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains two applications named App1 and App2. App1 is a sales processing application. When a transaction in App1 requires shipping, a message is added to an Azure Storage account queue, and then App2 listens to the queue for relevant transactions. In the future, additional applications will be added that will process some of the shipping requests based on the specific details of the transactions. You need to recommend a replacement for the storage account queue to ensure that each additional application will be able to read the relevant transactions. What should you recommend?
+
+- [ ] One Azure Data Factory pipeline.
+- [ ] Multiple storage account queues.
+- [ ] One Azure Service Bus queue.
+- [x] One Azure Service Bus topic.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains the storage accounts shown in the following table. You plan to implement two new apps that have the requirements shown in the following table. Which storage accounts should you recommend using for each app?
+
+![Question 63 part 1](images/question63_1.png)
+![Question 63 part 2](images/question63_2.png)
+![Question 63 part 3](images/question63_3.png)
+
+- [ ] App1: Storagel, storage2, and storage3 only. App2: Storage1, storage2, and storage4 only.
+- [ ] App1: Storage1 and storage2 only. App2: Storage1, storage2, and storage4 only.
+- [x] App1: Storage1 and storage3 only. App2: Storage1 and storage4 only.
+- [ ] App1: Storage1, storage2, storage3, and storage4. App2: Storage1 and storage4 only.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are designing an application that will be hosted in Azure. The application will host video files that range from 50 MB to 12 GB. The application will use certificate-based authentication and will be available to users on the internet. You need to recommend a storage option for the video files. The solution must provide the fastest read performance and must minimize storage costs. What should you recommend?
+
+- [ ] Azure Files.
+- [ ] Azure Data Lake Storage Gen2.
+- [x] Azure Blob Storage.
+- [ ] Azure SQL Database.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are designing a SQL database solution. The solution will include 20 databases that will be 20 GB each and have varying usage patterns.You need to recommend a database platform to host the databases. The solution must meet the following requirements: The solution must meet a Service Level Agreement (SLA) of 99.99% uptime.The compute resources allocated to the databases must scale dynamically. The solution must have reserved capacity. Compute charges must be minimized. What should you include in the recommendation?
+
+- [x] An elastic pool that contains 20 Azure SQL databases.
+- [ ] 20 databases on a Microsoft SQL server that runs on an Azure virtual machine in an availability set.
+- [ ] Azure public peering for an ExpressRoute circuit.
+- [ ] 20 instances of Azure SQL Database serverless.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an on-premises database that you plan to migrate to Azure. You need to design the database architecture to meet the following requirements: Support scaling up and down. Support geo-redundant backups. Support a database of up to 75 TB. Be optimized for online transaction processing (OLTP). What should you include in the design?
+
+![Question 66](images/question66.png)
+
+- [x] Service: Azure SQL Database. Service tier: Hyperscale.
+- [ ] Service: Azure SQL Database. Service tier: Premium.
+- [ ] Service: SQL Server on Azure Virtual Machines. Service tier: Standard.
+- [ ] Service: Azure Synapse Analytics. Service tier: Basic.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are planning an Azure IoT Hub solution that will include 50,000 IoT devices. Each device will stream data, including temperature, device ID, and time data. Approximately 50,000 records will be written every second. The data will be visualized in near real time. You need to recommend a service to store and query the data. Which two services can you recommend?
+
+- [ ] Azure Table Storage.
+- [ ] Azure Event Grid.
+- [x] Azure Cosmos DB SQL API.
+- [x] Azure Time Series Insights.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are designing an application that will aggregate content for users. You need to recommend a database solution for the application. The solution must meet the following requirements: Support SQL commands. Support multi-master writes. Guarantee low latency read operations. What should you include in the recommendation?
+
+- [x] Azure Cosmos DB SQL API.
+- [ ] Azure SQL Database that uses active geo-replication.
+- [ ] Azure SQL Database Hyperscale.
+- [ ] Azure Database for PostgreSQL.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains the SQL servers on Azure shown in the following table. The subscription contains the storage accounts shown in the following table. You create the Azure SQL databases shown in the following table. Question 1: When you enable auditing for SQLdb1, you can store the audit information to storage1.
+
+![Question 69 part 1](images/question69_70_71_1.png)
+![Question 69 part 2](images/question69_70_71_2.png)
+![Question 69 part 3](images/question69_70_71_3.png)
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains the SQL servers on Azure shown in the following table. The subscription contains the storage accounts shown in the following table. You create the Azure SQL databases shown in the following table. Question 2: When you enable auditing for SQLdb2, you can store the audit information to storage2.
+
+![Question 70 part 1](images/question69_70_71_1.png)
+![Question 70 part 2](images/question69_70_71_2.png)
+![Question 70 part 3](images/question69_70_71_3.png)
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains the SQL servers on Azure shown in the following table. The subscription contains the storage accounts shown in the following table. You create the Azure SQL databases shown in the following table. Question 3: When you enable auditing for SQLdb3, you can store the audit information to storage2.
+
+![Question 71 part 1](images/question69_70_71_1.png)
+![Question 71 part 2](images/question69_70_71_2.png)
+![Question 71 part 3](images/question69_70_71_3.png)
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have SQL Server on an Azure virtual machine. The databases are written to nightly as part of a batch process. You need to recommend a disaster recovery solution for the data. The solution must meet the following requirements: Provide the ability to recover in the event of a regional outage. Support a recovery time objective (RTO) of 15 minutes. Support a recovery point objective (RPO) of 24 hours. Support automated recovery. Minimize costs. What should you include in the recommendation?
+
+- [ ] Azure virtual machine availability sets.
+- [ ] Azure Disk Backup.
+- [ ] An Always On availability group.
+- [x] Azure Site Recovery.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You plan to deploy the backup policy shown in the following exhibit.
+
+![Question 73 part 1](images/question73_1.png)
+![Question 73 part 2](images/question73_2.png)
+
+- [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
+[answer choice]: 90 days. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the
+policy is [answer choice]: 1 month.
+- [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
+[answer choice]: 26 weeks. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the
+policy is [answer choice]: 1 hour.
+- [ ] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
+[answer choice]: 90 days. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the
+policy is [answer choice]: 1 day.
+- [x] Virtual machines that are backed up by using the policy can be recovered for up to a maximum of
+[answer choice]: 36 months. The minimum recovery point objective (RPO) for virtual machines that are backed up by using the policy is [answer choice]: 1 day.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you create an Azure Traffic Manager profile. Does this meet the goal?
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you deploy an Azure Application Gateway.
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You plan to create an Azure Storage account that will host file shares. The shares will be accessed from on-premises applications that are transaction-intensive. You need to recommend a solution to minimize latency when accessing the file shares. The solution must provide the highest-level of resiliency for the selected storage tier. What should you include in the recommendation?
+
+![Question 76](images/question76.png)
+
+- [ ] Storage tier: Hot. Redundancy: Locally-redundant storage (LRS).
+- [ ] Storage tier: Premium. Redundancy: Geo-redundant storage (GRS).
+- [x] Storage tier: Premium. Redundancy: Zone-redundant storage (ZRS).
+- [ ] Storage tier: Transaction optimized. Redundancy: Zone-redundant storage (ZRS).
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy an Azure virtual machine scale set that uses autoscaling.
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You plan to move a web app named App1 from an on-premises datacenter to Azure.App1 depends on a custom COM component that is installed on the host server. You need to recommend a solution to host App1 in Azure. The solution must meet the following requirements: App1 must be available to users if an Azure datacenter becomes unavailable. Costs must be minimized. What should you include in the recommendation?
+
+- [ ] In two Azure regions, deploy a load balancer and a web app.
+- [ ] In two Azure regions, deploy a load balancer and a virtual machine scale set.
+- [x] Deploy a load balancer and a virtual machine scale set across two availability zones.
+- [ ] In two Azure regions, deploy an Azure Traffic Manager profile and a web app.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains a Basic Azure virtual WAN named VirtualWAN1 and the virtual hubs shown in the following table. You have an ExpressRoute circuit in the US East Azure region. You need to create an ExpressRoute association to VirtualWAN1. What should you do first?
+
+![Question 79](images/question79.png)
+
+- [x] Upgrade VirtualWAN1 to Standard.
+- [ ] Create a gateway on Hub1.
+- [ ] Enable the ExpressRoute premium add-on.
+- [ ] Create a hub virtual network in US East.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains a storage account. An application sometimes writes duplicate files to the storage account. You have a PowerShell script that identifies and deletes duplicate files in the storage account. Currently, the script is run manually after approval from the operations manager. You need to recommend a serverless solution that performs the following actions: Runs the script once an hour to identify whether duplicate files exist. Sends an email notification to the operations manager requesting approval to delete the duplicate files. Processes an email response from the operations manager specifying whether the deletion was approved. Runs the script if the deletion was approved. What should you include in the recommendation?
+
+- [ ] Azure Logic Apps and Azure Event Grid.
+- [x] Azure Logic Apps and Azure Functions.
+- [ ] Azure Pipelines and Azure Service Fabric.
+- [ ] Azure Functions and Azure Batch.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company has the infrastructure shown in the following table. The on-premises Active Directory domain syncs with Azure Active Directory (Azure AD). Server1 runs an application named App1 that uses LDAP queries to verify user identities in the on-premises Active Directory domain. You plan to migrate Server1 to a virtual machine in Subscription1. A company security policy states that the virtual machines and services deployed to Subscription1 must be prevented from accessing the on-premises network. You need to recommend a solution to ensure that App1 continues to function after the migration. The solution must meet the security policy. What should you include in the recommendation?
+
+![Question 81](images/question81.png)
+
+- [ ] Azure AD Application Proxy.
+- [ ] The Active Directory Domain Services role on a virtual machine.
+- [ ] An Azure VPN gateway.
+- [x] Azure AD Domain Services (Azure AD DS).
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You need to design a solution that will execute custom C# code in response to an event routed to Azure Event Grid. The solution must meet the following requirements: The executed code must be able to access the private IP address of a Microsoft SQL Server instance that runs on an Azure virtual machine. Costs must be minimized. What should you include in the solution?
+
+- [ ] Azure Logic Apps in the Consumption plan.
+- [ ] Azure Functions in the Premium plan.
+- [x] Azure Functions in the Consumption plan.
+- [ ] Azure Logic Apps in the integrated service environment.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an on-premises network and an Azure subscription. The on-premises network has several branch offices. A branch office in Toronto contains a virtual machine named VM1 that is configured as a file server. Users access the shared files on VM1 from all the offices. You need to recommend a solution to ensure that the users can access the shared files as quickly as possible if the Toronto branch office is inaccessible. What should you include in the recommendation?
+
+- [ ] A Recovery Services vault and Windows Server Backup.
+- [ ] Azure blob containers and Azure File Sync.
+- [ ] A Recovery Services vault and Azure Backup.
+- [x] An Azure file share and Azure File Sync.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 1: The API is available to partners over the internet.
+
+![Question 84 part 1](images/question84_85_86_1.png)
+![Question 84 part 2](images/question84_85_86_2.jpg)
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 2: The APIM instance can access real-time data from VM1.
+
+![Question 85 part 1](images/question84_85_86_1.png)
+![Question 85 part 2](images/question84_85_86_2.jpg)
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 3: A VPN gateway is required for partner access.
+
+![Question 86 part 1](images/question84_85_86_1.png)
+![Question 86 part 2](images/question84_85_86_2.jpg)
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company has an existing web app that runs on Azure virtual machines. You need to ensure that the app is protected from SQL injection attempts and uses a layer-7 load balancer. The solution must minimize disruptions to the code of the app. What should you recommend?
+
+![Question 87](images/question87.png)
+
+- [ ] Azure service: Azure Application Gateway. Feature: SSL offloading.
+- [ ] Azure service: Azure Traffic Manager. Feature: Web Application Firewall (WAF).
+- [x] Azure service: Azure Application Gateway. Feature: Web Application Firewall (WAF).
+- [ ] Azure service: Azure Load Balancer. Feature: URL-based content routing.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are designing a microservices architecture that will be hosted in an Azure Kubernetes Service (AKS) cluster. Apps that will consume the microservices will be hosted on Azure virtual machines. The virtual machines and the AKS cluster will reside on the same virtual network. You need to design a solution to expose the microservices to the consumer apps. The solution must meet the following requirements: Ingress access to the microservices must be restricted to a single private IP address and protected by using mutual TLS authentication. The number of incoming microservice calls must be rate-limited. Costs must be minimized. What should you include in the solution?
+
+- [ ] Azure App Gateway with Azure Web Application Firewall (WAF).
+- [ ] Azure API Management Standard tier with a service endpoint.
+- [ ] Azure Front Door with Azure Web Application Firewall (WAF).
+- [x] Azure API Management Premium tier with virtual network connection.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have a .NET web service named Service1 that has the following requirements: Must read and write temporary files to the local file system. Must write to the Application event log. You need to recommend a solution to host Service1 in Azure. The solution must meet the following requirements: Minimize maintenance overhead. Minimize costs. What should you include in the recommendation?
+
+- [ ] An Azure App Service web app.
+- [x] An Azure virtual machine scale set.
+- [ ] An App Service Environment (ASE).
+- [ ] An Azure Functions app.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have the Azure resources shown in the following table. You need to deploy a new Azure Firewall policy that will contain mandatory rules for all Azure Firewall deployments. The new policy will be configured as a parent policy for the existing policies. What is the minimum number of additional Azure Firewall policies you should create?
+
+![Question 90](images/question90.png)
+
+- [ ] 0.
+- [x] 1.
+- [ ] 2.
+- [ ] 3.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company has an app named App1 that uses data from the on-premises Microsoft SQL Server databases shown in the following table. App1 and the data are used on the first day of the month only. The data is not expected to grow more than 3% each year. The company is rewriting App1 as an Azure web app and plans to migrate all the data to Azure. You need to migrate the data to Azure SQL Database. The solution must minimize costs. Which service tier should you use?
+
+![Question 91](images/question91.png)
+
+- [ ] vCore-based General Purpose.
+- [x] DTU-based Standard.
+- [ ] vCore-based Business Critical.
+- [ ] DTU-based Basic.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are developing a sales application that will contain several Azure cloud services and handle different components of a transaction. Different cloud services will process customer orders, billing, payment, inventory, and shipping. You need to recommend a solution to enable the cloud services to asynchronously communicate transaction information by using XML messages. What should you include in the recommendation?
+
+- [ ] Azure Service Fabric.
+- [ ] Azure Data Lake.
+- [x] Azure Service Bus.
+- [ ] Azure Traffic Manager.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company has 300 virtual machines hosted in a VMware environment. The virtual machines vary in size and have various utilization levels. You plan to move all the virtual machines to Azure. You need to recommend how many and what size Azure virtual machines will be required to move the current workloads to Azure. The solution must minimize administrative effort. What should you use to make the recommendation?
+
+- [ ] Azure Pricing calculator.
+- [ ] Azure Advisor.
+- [x] Azure Migrate.
+- [ ] Azure Cost Management.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You plan provision a High Performance Computing (HPC) cluster in Azure that will use a third-party scheduler. You need to recommend a solution to provision and manage the HPC cluster node. What should you include in the recommendation?
+
+- [ ] Azure Automation.
+- [ ] Azure CycleCloud.
+- [x] Azure Purview.
+- [ ] Azure Lighthouse
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are designing an Azure App Service web app. You plan to deploy the web app to the North Europe Azure region and the West Europe Azure region. You need to recommend a solution for the web app. The solution must meet the following requirements: Users must always access the web app from the North Europe region, unless the region fails. The web app must be available to users if an Azure region is unavailable. Deployment costs must be minimized. What should you include in the recommendation?
+
+![Question 95](images/question95.png)
+
+- [x] Request routing method: A Traffic Manager profile. Request routing configuration: Priority traffic routing.
+- [ ] Request routing method: Azure Application Gateway. Request routing configuration: Priority traffic routing.
+- [ ] Request routing method: A Traffic Manager profile. Request routing configuration: Cookie-based session affinity.
+- [ ] Request routing method: Azure Load Balancer. Request routing configuration: Performance traffic routing.
 
 **[⬆ Back to Top](#table-of-contents)**
