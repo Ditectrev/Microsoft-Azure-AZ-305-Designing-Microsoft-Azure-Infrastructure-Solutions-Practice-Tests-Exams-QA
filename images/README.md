@@ -321,14 +321,12 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You design a solution for the web tier of WebApp1 as shown in the exhibit
+### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 1: The design supports the technical requirements for redundancy.
 
-![Question 27](images/question27.jpg)
+![Question 27](images/question27_96_97.jpg)
 
-- [x] The design supports the technical requirements for redundancy.: Yes. The design supports autoscaling.: Yes. The design requires a manual configuration if an Azure region fails.: No.
-- [ ] The design supports the technical requirements for redundancy.: No. The design supports autoscaling.: Yes. The design requires a manual configuration if an Azure region fails.: No.
-- [ ] The design supports the technical requirements for redundancy.: Yes. The design supports autoscaling.: No. The design requires a manual configuration if an Azure region fails.: Yes.
-- [ ] The design supports the technical requirements for redundancy.: No. The design supports autoscaling.: No. The design requires a manual configuration if an Azure region fails.: No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -987,5 +985,23 @@ policy is [answer choice]: 1 day.
 - [ ] Request routing method: Azure Application Gateway. Request routing configuration: Priority traffic routing.
 - [ ] Request routing method: A Traffic Manager profile. Request routing configuration: Cookie-based session affinity.
 - [ ] Request routing method: Azure Load Balancer. Request routing configuration: Performance traffic routing.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 2: The design supports autoscaling.
+
+![Question 96](images/question96.jpg)
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 3: The design requires a manual configuration if an Azure region fails.
+
+![Question 97](images/question97.jpg)
+
+- [ ] Yes.
+- [x] No.
 
 **[⬆ Back to Top](#table-of-contents)**
