@@ -209,13 +209,12 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You need to design an architecture to capture the creation of users and the assignment of roles. The captured data must be stored in Azure Cosmos DB. Which Azure services should you include in the design?
 
-![Question 16](images/question16.jpg)
+![Question 16](images/question16.jpeg)
 
-- [ ] Azure Event Grid.
-- [x] Azure Event Hubs.
-- [x] Azure Functions.
-- [ ] Azure Log Analytics.
-- [ ] Azure Notification Hubs.
+- [ ] Box 1: Azure Event Grid. Box 2: Azure Functions.
+- [x] Box 1: Azure Event Hubs. Box 2: Azure Functions.
+- [ ] Box 1: Azure Notification Hubs. Box 2: Azure Log Analytics.
+- [ ] Box1: Azure Notification Hubs. Box 2: Azure Functions.
 
 **[⬆ Back to Top](#table-of-contents)**
 
