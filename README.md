@@ -116,15 +116,27 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Your company has the divisions shown in the following table. You plan to deploy a custom application to each subscription. The application will contain the following: A resource group. An Azure web app. Custom role assignments. An Azure Cosmos DB account. You need to use Azure Blueprints to deploy the application to each subscription. What is the minimum number of objects required to deploy the application?
+Management groups:
 
-![Question 2 part 1](images/question2_1.jpg)
-![Question 2 part 2](images/question2_2.jpeg)
+- [ ] 1.
+- [x] 2.
+- [ ] 3.
+- [ ] 4.
 
-- [ ] Management groups: 1. Blueprint definitions: 2. Blueprint assignments: 1.
-- [ ] Management groups: 2. Blueprint definitions: 2. Blueprint assignments: 2.
-- [x] Management groups: 2. Blueprint definitions: 2. Blueprint assignments: 4.
-- [ ] Management groups: 4. Blueprint definitions: 4. Blueprint assignments: 2.
+Bluepprint definitions:
+
+- [x] 1.
+- [ ] 2.
+- [ ] 3.
+- [ ] 4.
+
+Bluepprint assignments:
+
+- [ ] 1.
+- [x] 2.
+- [ ] 3.
+- [ ] 4.
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -207,7 +219,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Your company has deployed several virtual machines (VMs) on-premises and to Azure. Azure ExpressRoute has been deployed and configured for on-premises to Azure connectivity. Several VMs are exhibiting network connectivity issues. You need to analyze the network traffic to determine whether packets are being allowed or denied to the VMs. Solution: Use the Azure Advisor to analyze the network traffic. Does the solution meet the goal?
+### Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic. Does this meet the goal?
 
 - [ ] Yes.
 - [x] No.
@@ -579,9 +591,9 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 - [x] Azure AD Application Proxy
 - [ ] Azure AD Privileged Identity Management (PIM)
-- [x] Conditional Access policies
+- [ ] Conditional Access policies
 - [ ] Azure Arc
-- [ ] Azure AD enterprise applications
+- [x] Azure AD enterprise applications
 - [ ] Azure Application Gateway
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -595,12 +607,12 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You plan to deploy Azure Databricks to support a machine learning application. Data engineers will mount an Azure Data Lake Storage account to the Databricks file system. Permissions to folders are granted directly to the data engineers. You need to recommend a design for the planned Databrick deployment. The solution must meet the following requirements: Ensure that the data engineers can only access folders to which they have permissions. Minimize development effort. Minimize costs. What should you include in the recommendation?
+### You plan to deploy Azure Databricks to support a machine learning application. Data engineers will mount an Azure Data Lake Storage account to the Databricks file system. Permissions to folders are granted directly to the data engineers. You need to recommend a design for the planned Databrick deployment. The solution must meet the following requirements: Ensure that the data engineers can only access folders to which they have permissions. Minimize development effort. Minimize costs. What should you include in the recommendation? To answer, select the appropriate options in the answer area.NOTE: Each correct selection is worth one point.
 
 ![Question 51](images/question51.png)
 
 - [ ] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
-- [x] Databricks SKU: Standard. Cluster configuration: Credential passthrough.
+- [x] Databricks SKU: Premium. Cluster configuration: Credential passthrough.
 - [ ] Databricks SKU: Standard. Cluster configuration: Secret scope.
 - [ ] Databricks SKU: Premium. Cluster configuration: Managed identities.
 
@@ -617,7 +629,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is being deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic
+### Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is being deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic. Does this meet the goal?
 
 - [ ] Yes.
 - [x] No.
@@ -631,7 +643,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Network Watcher to run IP flow verify to analyze the network traffic. Does this meet the goal?
+### Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Network Watcher to run IP flow verify to analyze the network traffic. Does this meet the goal?
 
 - [x] Yes.
 - [ ] No.
@@ -649,25 +661,26 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You are designing a large Azure environment that will contain many subscriptions. You plan to use Azure Policy as part of a governance solution. To which three scopes can you assign Azure Policy definitions?
+### You are designing a large Azure environment that will contain many subscriptions. You plan to use Azure Policy as part of a governance solution. To which three scopes can you assign Azure Policy definitions? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.
 
-- [x] Azure Active Directory (Azure AD) administrative units.
+- [ ] Azure Active Directory (Azure AD) administrative units.
 - [ ] Azure Active Directory (Azure AD) tenants.
 - [x] Subscriptions.
 - [ ] Compute resources.
-- [ ] Resource groups.
+- [x] Resource groups.
 - [x] Management groups.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Your on-premises network contains a server named Server1 that runs an ASP.NET application named App1. You have a hybrid deployment of Azure Active Directory (Azure AD). You need to recommend a solution to ensure that users sign in by using their Azure AD account and Azure Multi-Factor Authentication (MFA) when they connect to App1 from the internet. Which three features should you recommend be deployed and configured in sequence?
+### Your on-premises network contains a server named Server1 that runs an ASP.NET application named App1. You have a hybrid deployment of Azure Active Directory (Azure AD). You need to recommend a solution to ensure that users sign in by using their Azure AD account and Azure Multi-Factor Authentication (MFA) when they connect to App1 from the internet. Which three features should you recommend be deployed and configured in sequence? To answer, move the appropriate features from the list of features to the answer area and arrange them in the correct order.
 
-![Question 58](images/question58.png)
-
-- [ ] Box 1: a public Azure Load Balancer. Box 2: an Azure AD enterprise application. Box 3: a Conditional Access policy.
-- [ ] Box 1: an Azure App Service plan. Box 2: a managed identity. Box 3: Azure AD Application Proxy.
-- [x] Box 1: Azure AD Application Proxy. Box 2: an Azure AD enterprise application. Box 3: a Conditional Access policy.
-- [ ] Box 1: an internal Azure Load Balancer. Box 2: a Conditional Access policy. Box 3: Azure AD Application Proxy.
+- [ ] a public Azure Load Balancer.
+- [ ] a managed identity.
+- [ ] an internal Azure Load Balancer.
+- [x] a Conditional Access policy.
+- [ ] an Azure Appp Service pplan.
+- [x] Azure Ad Application Proxy.
+- [x] an Azure AD enterpprise application.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1055,3 +1068,456 @@ policy is [answer choice]: 1 day.
 - [x] No.
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. You need to identify which server is the PDC emulator for the domain. Solution: From Active Directory Domains and Trusts, you right-click Active Directory Domains and Trusts in the console tree, and then select Operations Master. Does this meet the goal?
+
+- [x] Yes.
+- [ ] No.
+
+### You have an on premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. You plan to implement self-service password reset (SSPR) in Azure AD.You need to ensure that users that reset their passwords by using SSPR can use the new password resources in the AD DS domain. What should you do?
+
+- [ ] Deploy the Azure AD Password Protection proxy service to the on premises network.
+- [x] Run the Microsoft Azure Active Directory Connect wizard and select Password writeback.
+- [ ] Grant the Change password permission for the domain to the Azure AD Connect service account.
+- [ ] Grant the impersonate a client after authentication user right to the Azure AD Connect service account.
+
+### You have an Azure Active Directory Domain Services (Azure AD DS) domain named contoso.com. You need to provide an administrator with the ability to manage Group Policy Objects (GPOs). The solution must use the principle of least privilege. To which group should you add the administrator?
+
+- [x] AAD DC Administrators.
+- [ ] Domain Admins.
+- [ ] Schema Admins.
+- [ ] Enterprise Admins.
+- [ ] Group Policy Creator Owners.
+
+### You create a new Azure subscription. You plan to deploy Azure Active Directory Domain Services (Azure AD DS) and Azure virtual machines. You need to ensure that the virtual machines can join to Azure AD DS. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place:
+
+- [x] Modify the settings of the Azure virtual network.
+- [ ] Install the Active Direcotry Domain Services role.
+- [ ] Install Azure AD Connect.
+- [x] Create an Azure virtual network.
+- [x] Create an Azure AD DS instance.
+- [ ] Run the Active Directory Domain Service installation Wizard.
+
+### Add Admin1 to the following group:
+
+- [x] AAD DC Administrators.
+- [ ] Domain Admins.
+- [ ] Group Policy Creator Oweners.
+
+### Instruct Admin1 apply the custom Groupp Policy settings by:
+
+- [ ] Creating a new Group Policy Object (GPO) and linking the GPO to the domain.
+- [x] Modifying AADDC Compputers GPO.
+- [ ] Modifying the default domain GPO.
+
+### Your network contains a single domain Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains a single Active Directory site. You plan to deploy a read only domain controller (RODC) to a new datacenter on a server named Server1. A user named User1 is a member of the local Administrators group on Server1. You need to recommend a deployment plan that meets the following requirements: Ensures that a user named User1 can perform the RODC installation on Server1 Ensures that you can control the AD DS replication schedule to the Server1 Ensures that Server1 is in a new site named RemoteSite1Uses the principle of least privilege Which three actions should you recommend performing in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place:
+
+- [x] Instruct User1 to run the Active Directory Domain Services installation Wizard on Server!.
+- [ ] Create a site and a subnet.
+- [x] Create a site link.
+- [x] Pre-create an RODOC account.
+- [ ] Add User1 to the Contoso\Administstrators group.
+
+
+###  Your network contains an Active Directory Domain Services (AD DS) domain. The network also contains 20 domain controllers, 100 member servers, and 100 client computers. You have a Group Policy Object (GPO) named GPO1 that contains Group Policy preferences. You plan to link GPO1 to the domain. You need to ensure that the preference in GPO1 apply only to domain member servers and NOT to domain controllers or client computers. All the other Group Policy settings in GPO1 must apply to all the computers. The solution must minimize administrative effort. Which type of item level targeting should you use?
+
+- [ ] Domain
+- [x] Operating System
+- [ ] Security Group
+- [ ] Environment Variable
+
+### Events from Windows event logs:
+
+- [ ] AzureActivity.
+- [ ] AzureDiagnostics.
+- [x] Event.
+- [ ] Syslog.
+
+### Events from Linux system logging:
+
+- [ ] AzureActivity.
+- [ ] AzureDiagnostics.
+- [ ] Event.
+- [x] Syslog.
+
+### Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Install and configure the Azure Monitoring agent and the Dependency Agent on all the virtual machines. Use VM insights in Azure Monitor to analyze the network traffic. Does this meet the goal?
+
+- [ ] Yes.
+- [x] No.
+
+### You need to design an architecture to capture the creation of users and the assignment of roles. The captured data must be stored in Azure Cosmos DB. Which services should you include in the design? To answer, drag the appropriate services to the correct targets. Each service may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. NOTE: Each correct selection is worth one point.
+
+- [ ] Azure Event Grid.
+- [x] Azure Event Hubs.
+- [x] Azure Functions.
+- [ ] Azure Monitor Logs.
+- [ ] Azure Notification Hubs.
+
+
+### Your company, named Contoso, Ltd., implements several Azure logic apps that have HTTP triggers. The logic apps provide access to an on-premises web service. Contoso establishes a partnership with another company named Fabrikam, Inc. Fabrikam does not have an existing Azure Active Directory (Azure AD) tenant and uses third-party OAuth 2.0 identity management to authenticate its users. Developers at Fabrikam plan to use a subset of the logic apps to build applications that will integrate with the on-premises web service of Contoso. You need to design a solution to provide the Fabrikam developers with access to the logic apps. The solution must meet the following requirements: Requests to the logic apps from the developers must be limited to lower rates than the requests from the users at Contoso. The developers must be able to rely on their existing OAuth 2.0 provider to gain access to the logic apps. The solution must NOT require changes to the logic apps. The solution must NOT use Azure AD guest accounts. What should you include in the solution?v
+
+- [ ] Azure Front Door.
+- [ ] Azure AD Application Proxy.
+- [ ] Azure AD business-to-business (B2B).
+- [x] Azure API Management.
+
+### Resource to create in Azure:
+
+- [ ] An event hub.
+- [x] A Log Analytics workspace.
+- [ ] A search service.
+- [ ] A storage account.
+
+### Configuration to erform on the virtual machines:
+
+- [ ] Create event subscripptions.
+- [ ] Configure Continous delivery.
+- [x] Install the Azure Monitor agent.
+- [ ] Modify the membership of the Event Log Readers group.
+
+### Security:
+
+- [x] Azure AD privileged Identitu Management.
+- [ ] Azure Managed Identity.
+- [ ] Azure Ad Connect.
+- [ ] Azure Ad identity Pprotection.
+
+### Development:
+
+- [ ] Azure AD privileged Identitu Management.
+- [x] Azure Managed Identity.
+- [ ] Azure Ad Connect.
+- [ ] Azure Ad identity Pprotection.
+
+### Quality Assurance:
+
+- [x] Azure AD privileged Identitu Management.
+- [ ] Azure Managed Identity.
+- [ ] Azure Ad Connect.
+- [ ] Azure Ad identity Pprotection.
+
+### Azure Policy effect to use:
+
+- [ ] Append.
+- [ ] EnforceOPAConstraint.
+- [ ] EnforceRegoPolicy.
+- [x] Modify.
+
+### Azure Active Direcotry (Azure AD) objects and role-based access control (RBAC) role to use for the remediation tasks:
+
+- [x] A managed identity with the Contributor role.
+- [ ] A managed identity with the User Access Administrator role.
+- [ ] A service principal with the Contribution role.
+- [ ] A service principal with the User Access Administrator role.
+
+### You can add a new diagnostic settings that archives SQLInsights logs to storage2.
+
+- [x] Yes.
+- [ ] No.
+
+### You can add a new diagnostic settings that send SQLInsights logs to Workspace2.
+
+- [x] Yes.
+- [ ] No.
+
+### You can add a new diagnostic settings that send SQLInsights logs to Hub1.
+
+- [x] Yes.
+- [ ] No.
+
+### You plan to deploy an Azure SQL database that will store Personally Identifiable Information (PII). You need to ensure that only privileged users can view the PII. What should you include in the solution?
+
+- [x] dynamic data masking.
+- [ ] role-based access control (RBAC).
+- [ ] Data Discovery & Classification.
+- [ ] Transparent Data Encryption (TDE).
+
+### You plan to deploy an app that will use an Azure Storage account. You need to deploy the storage account. The storage account must meet the following requirements: Store the data for multiple users. Encrypt each user's data by using a separate key. Encrypt all the data in the storage account by using customer-managed keys. What should you deploy?
+
+- [ ] files in a premium file share storage account.
+- [x] blobs in a general purpose v2 storage account.
+- [ ] blobs in an Azure Data Lake Storage Gen2 account.
+- [ ] files in a general purpose v2 storage account.
+
+### Key Vault integration method:
+
+- [x] Key Vault references in Application settings.
+- [ ] Key Vault references in Appsettings.json.
+- [ ] Key Vault references in Web.config.
+- [ ] Key Vault SDK
+
+### Key Vault ppermissions for the managed identity:
+
+- [ ] Keys: Gey.
+- [ ] Keys: List and Get.
+- [x] Secrets: Get.
+- [ ] Secrets: List and Get.
+
+### You plan to deploy an application named App1 that will run on five Azure virtual machines. Additional virtual machines will be deployed later to run App1. You need to recommend a solution to meet the following requirements for the virtual machines that will run App1: Ensure that the virtual machines can authenticate to Azure Active Directory (Azure AD) to gain access to an Azure key vault, Azure Logic Apps instances, and an Azure SQL database. Avoid assigning new roles and permissions for Azure services when you deploy additional virtual machines. Avoid storing secrets and certificates on the virtual machines. Minimize administrative effort for managing identities. Which type of identity should you include in the recommendation?
+
+- [ ] a system-assigned managed identity.
+- [ ] a service principal that is configured to use a certificate.
+- [ ] a service principal that is configured to use a client secret.
+- [x] a user-assigned managed identity.
+
+### You have the resources shown in the following table: CDB1 hosts a container that stores continuously updated operational data. You are designing a solution that will use AS1 to analyze the operational data daily. You need to recommend a solution to analyze the data without affecting the performance of the operational data store. What should you include in the recommendation?
+
+![Question 26](images/question26.png)
+
+- [ ] Azure Cosmos DB change feed.
+- [ ] Azure Data Factory with Azure Cosmos DB and Azure Synapse Analytics connectors.
+- [x] Azure Synapse Link for Azure Cosmos DB.
+- [ ] Azure Synapse Analytics with PolyBase data loading.
+
+### The amount of time that SQLInsight data will be stored in blob storage in [...].
+
+- [ ] 30 days.
+- [x] 90 days.
+- [ ] 730 days.
+- [ ] indefinite.
+
+### The maximum  amount of time that SQLInsights data can be stored in Azure Log Analytics is [...].
+
+- [ ] 30 days.
+- [ ] 90 days.
+- [x] 730 days.
+- [ ] indefinite.
+
+### You have an application that is used by 6,000 users to validate their vacation requests. The application manages its own credential store. Users must enter a username and password to access the application. The application does NOT support identity providers. You plan to upgrade the application to use single sign-on (SSO) authentication by using an Azure Active Directory (Azure AD) application registration. Which SSO method should you use?
+
+- [ ] header-based.
+- [ ] SAML.
+- [x] password-based.
+- [ ] OpenID Connect.
+
+### To provide access to virtual machines on VNET1, use: [...].
+
+- [ ] Azure Bastion.
+- [x] Just-in-time (JIT) VM access.
+- [ ] Azure Web Appplication Firewall (WAF) in Azure Front Doctor.
+
+### To enforce Azure MFA, use:
+
+- [ ] An Azure Identity Governance access package.
+- [x] A Conditional Access policy that has the Cloud apps assignment set to Azure Windows Vm Sing-In.
+- [ ] A Conditional Access ppolicy that has the Cloud apps assignment set to Microsoft Azure Management.
+
+### You are designing an Azure governance solution. All Azure resources must be easily identifiable based on the following operational information: environment, owner, department and cost center. You need to ensure that you can use the operational information when you generate reports for the Azure resources. What should you include in the solution?
+
+- [ ] an Azure data catalog that uses the Azure REST API as a data source.
+- [ ] an Azure management group that uses parent groups to create a hierarchy.
+- [x] an Azure policy that enforces tagging rules.
+- [ ] Azure Active Directory (Azure AD) administrative units.
+
+### A company named Contoso, Ltd. has an Azure Active Directory (Azure AD) tenant that is integrated with Microsoft 365 and an Azure subscription. Contoso has an on-premises identity infrastructure. The infrastructure includes servers that run Active Directory Domain Services (AD DS) and Azure AD Connect. Contoso has a partnership with a company named Fabrikam. Inc. Fabrikam has an Active Directory forest and a Microsoft 365 tenant. Fabrikam has the same on- premises identity infrastructure components as Contoso. A team of 10 developers from Fabrikam will work on an Azure solution that will be hosted in the Azure subscription of Contoso. The developers must be added to the Contributor role for a resource group in the Contoso subscription. You need to recommend a solution to ensure that Contoso can assign the role to the 10 Fabrikam developers. The solution must ensure that the Fabrikam developers use their existing credentials to access resources What should you recommend?
+
+- [ ] In the Azure AD tenant of Contoso. create cloud-only user accounts for the Fabrikam developers.
+- [ ] Configure a forest trust between the on-premises Active Directory forests of Contoso and Fabrikam.
+- [ ] Configure an organization relationship between the Microsoft 365 tenants of Fabrikam and Contoso.
+- [x] In the Azure AD tenant of Contoso, create guest accounts for the Fabnkam developers.
+
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+![Question 32](images/question32.jpg)
+
+- [ ] Configure the Azure AD provisioning service.
+- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
+- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Configure Azure AD join.
+
+### Grant permissions to allow the web apps to access the web APIs by using [...].
+
+- [x] Azure AD.
+- [ ] Azure API Management.
+- [ ] The web APIs.
+
+### Configure a JSON WEB Token (JWT) validation policy by using [...].
+
+- [ ] Azure AD.
+- [x] Azure API Management.
+- [ ] The web APIs.
+
+### You are developing an app that will read activity logs for an Azure subscription by using Azure Functions. You need to recommend an authentication solution for Azure Functions. The solution must minimize administrative effort. What should you include in the recommendation?
+
+- [ ] an enterprise application in Azure AD.
+- [x] system-assigned managed identities.
+- [ ] shared access signatures (SAS).
+- [ ] application registration in Azure AD.
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+![Question 37](images/question37.png)
+
+- [ ] Configure Azure AD join.
+- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
+- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
+
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+![Question 38](images/question38.png)
+
+- [ ] Configure Azure AD join.
+- [ ] Configure Azure AD Identity Protection.
+- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
+
+### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
+
+- [x] Azure Activity Log.
+- [ ] Azure Arc.
+- [ ] Azure Analysis Services.
+- [ ] Azure Monitor metrics.
+
+### Configure App1l to use OAuth 2.0 [...]:
+
+- [ ] Authorization code grant flows.
+- [x] Client credentials grant flows.
+- [ ] Implicit grant flows.
+
+### Configure App1 to use a Rest API call to retrieve an authentication token from the [...]:
+
+- [ ] Azure Instance Metadata Service (MDS) endpoint.
+- [x] OAuth 2.0 access token endpoint of Azure AD.
+- [ ] OAuth 2.0 access token endpoint of Microsoft Identity Platform.
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+![Question 41](images/question41.png)
+
+- [ ] Configure Azure AD join.
+- [ ] Configure Azure AD Identity Protection.
+- [ ] Configure a Conditional Access policy.
+- [x] Configure Supported account types in the application registration and update the sign-in endpoint.
+
+### Authentication:
+
+- [x] Application registration in Azure AD.
+- [ ] A system-assigned managed identity.
+- [ ] A user-assigned managed identity.
+
+### Authorization:
+
+- [ ] Application permissions.
+- [ ] Azure role-based access control (Azure RBAC).
+- [x] Delegated permissions.
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+![Question 44](images/question44.png)
+
+- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
+- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
+- [ ] Configure Azure AD Identity Protection.
+
+###  Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+[Question 45](images/question45.png)
+
+- [ ] Configure the Azure AD provisioning service.
+- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
+- [x] Configure Supported account types in the application registration and update the sign-in endpoint.
+- [ ] Configure Azure AD join.
+
+### User1 can create a new virtual machine in RG1.
+
+- [x] Yes.
+- [ ] No.
+
+### User2 can grant permissions to Group2.
+
+- [ ] Yes.
+- [x] No.
+
+### User3 can create a storage account in RG2.
+
+- [x] Yes.
+- [ ] No.
+
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+[Question 47](images/question47.png)
+
+- [ ] Configure Azure AD Identity Protection.
+- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
+- [x] Configure Supported account types in the application registration and update the sign-in endpoint.
+- [ ] Configure a Conditional Access policy.
+
+### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
+
+- [x] Use Azure AD entitlement management to govern external users.
+- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
+- [ ] Configure a Conditional Access policy.
+- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
+
+### You have an Azure subscription that contains 1,000 resources. You need to generate compliance reports for the subscription. The solution must ensure that the resources can be grouped by department. What should you use to organize the resources?
+
+- [ ] application groups and quotas.
+- [x] Azure Policy and tags.
+- [ ] administrative units and Azure Lighthouse.
+- [ ] resource groups and role assignments.
+
+
+### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
+
+- [ ] Azure Arc
+- [ ] Azure Monitor metrics
+- [ ] Azure Advisor
+- [x] Azure Log Analytics
+
+### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
+
+- [ ] Azure Monitor action groups.
+- [ ] Azure Arc.
+- [ ] Azure Monitor metrics.
+- [x] Azure Activity Log.
+
+### You have an Azure AD tenant that contains an administrative unit named MarketingAU. MarketingAU contains 100 users. You create two users named User1 and User2. You need to ensure that the users can perform the following actions in MarketingAU:  User1 must be able to create user accounts. User2 must be able to reset user passwords. Which role should you assign to each user? To answer, drag the appropriate roles to the correct users. Each role may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. NOTE: Each correct selection is worth one point.
+
+- [x] Helpdesk Administrator for MarketingAU.
+- [ ] Helpdesk Administrator for the tenant.
+- [x] User Administrator for MarketingAU.
+- [ ] User Administrator for the tenant.
+
+### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
+
+- [ ] Azure Arc.
+- [x] Azure Log Analytics Most Voted.
+- [ ] Application insights.
+- [ ] Azure Monitor action groups.
+
+### Storage [...]:
+
+- [ ] Certificate.
+- [ ] Key.
+- [x] Secret.
+
+### Access [...]:
+
+- [ ] An API token.
+- [x] A managed service identity.
+- [ ] A service principal.
+
+### You have two app registrations named App1 and App2 in Azure AD. App1 supports role-based access control (RBAC) and includes a role named Writer. You need to ensure that when App2 authenticates to access App1, the tokens issued by Azure AD include the Writer role claim. Which blade should you use to modify each app registration? To answer, drag the appropriate blades to the correct app registrations. Each blade may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. NOTE: Each correct selection is worth one point.
+
+- [ ] API permissions.
+- [x] App roles.
+- [x] Token configuration.
+
+### You have an Azure subscription. You plan to deploy a monitoring solution that will include the following: Azure Monitor Network Insights. Application Insights. Microsoft Sentinel. VM insights. The monitoring solution will be managed by a single team. What is the minimum number of Azure Monitor workspaces required?
+
+- [x] 1.
+- [ ] 2.
+- [ ] 3.
+- [ ] 4.
+
+### You have an Azure subscription that contains 10 web apps. The apps are integrated with Azure AD and are accessed by users on different project teams. The users frequently move between projects. You need to recommend an access management solution for the web apps. The solution must meet the following requirements: The users must only have access to the app of the project to which they are assigned currently. Project managers must verify which users have access to their project’s app and remove users that are no longer assigned to their project. Once every 30 days, the project managers must be prompted automatically to verify which users are assigned to their projects. What should you include in the recommendation?
+
+- [ ] Azure AD Identity Protection.
+- [ ] Microsoft Defender for Identity.
+- [ ] Microsoft Entra Permissions Management.
+- [x] Azure AD Identity Governance.
