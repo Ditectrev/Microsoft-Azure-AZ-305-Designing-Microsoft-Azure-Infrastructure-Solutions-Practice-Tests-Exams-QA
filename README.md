@@ -1521,3 +1521,91 @@ policy is [answer choice]: 1 day.
 - [ ] Microsoft Defender for Identity.
 - [ ] Microsoft Entra Permissions Management.
 - [x] Azure AD Identity Governance.
+
+### Set available effects to [...]:
+
+- [x] DepoyIfNotExist.
+- [ ] EnforceRegoPolicy.
+- [ ] Modify.
+
+#### Include in the definition [...]:
+
+- [x] The identity required to perform the remediation task.
+- [ ] The scopes of the policy assignments.
+- [ ] The role-based access control (RBAC) roles required to perform the remediation task.
+
+### You have an Azure subscription. The subscription contains a tiered app named App1 that is distributed across multiple containers hosted in Azure Container Instances. You need to deploy an Azure Monitor monitoring solution for App. The solution must meet the following requirements: Support using synthetic transaction monitoring to monitor traffic between the App1 components. Minimize development effort. What should you include in the solution?
+
+- [ ] Network insights.
+- [x] Application Insights.
+- [ ] Container insights.
+- [ ] Log Analytics Workspace insights.
+
+### Resource [...]:
+
+- [ ] App1.
+- [ ] App1Logs.
+- [x] Workspace1.
+
+### Modification [...]:
+
+- [x] Change to a commitment pricing tier.
+- [ ] Change to the Basic Logs data plan.
+- [ ] Set a daily cap.
+
+### You have 12 Azure subscriptions and three projects. Each project uses resources across multiple subscriptions. You need to use Microsoft Cost Management to monitor costs on a per project basis. The solution must minimize administrative effort. Which two components should you include in the solution? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.
+
+- [x] budgets.
+- [x] resource tags.
+- [ ] custom role-based access control (RBAC) roles.
+- [ ] management groups.
+- [ ] Azure boards.
+
+### To trigger the compliance scans, use [...]:
+
+- [ ] An Azure template.
+- [x] The Azure Command-Line Interface (CLI).
+- [ ] The Azure portal.
+
+### To generate the non-compliance alerts, configure diagnostic settings for the [...]:
+
+- [x] Azure activity logs.
+- [ ] Log Analytics workspace.
+- [ ] Storage accounts.
+
+
+### For the blobs [...]:
+
+- [ ] A user delegation shared access signature (SAS) only.
+- [x] A shared access signature (SAS) and a stored access policy.
+- [ ] A user delegation shared access signature (SAS) and a stored access policy.
+
+### For the file shares [...]:
+
+- [x] Azure AD credentials.
+- [ ] A user delegation shared access signature (SAS) only.
+- [ ] A user delegation shared access signature (SAS) and a stored access policy.
+
+### To forward the logs [...]:
+
+- [ ] A linked storage account for the Log Analytics workspace.
+- [x] An Azure Monitor data collection endpoint.
+- [ ] A service endpoint.
+
+### To transform the logs and store the data [...]:
+
+- [x] A KQL query.
+- [ ] A WQL query.
+- [ ] An XPath query.
+
+### To collect the event logs [...]:
+
+- [x] Azure Event Grid.
+- [ ] Azure Lighthouse.
+- [ ] Azure Purview.
+
+### To support the DCRs [...]:
+
+- [ ] The Log Analytics agent.
+- [x] The Azure Monitor agent.
+- [ ] The Azure Connected Machine agent.
