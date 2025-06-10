@@ -607,7 +607,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You plan to deploy Azure Databricks to support a machine learning application. Data engineers will mount an Azure Data Lake Storage account to the Databricks file system. Permissions to folders are granted directly to the data engineers. You need to recommend a design for the planned Databrick deployment. The solution must meet the following requirements: Ensure that the data engineers can only access folders to which they have permissions. Minimize development effort. Minimize costs. What should you include in the recommendation? 
+### You plan to deploy Azure Databricks to support a machine learning application. Data engineers will mount an Azure Data Lake Storage account to the Databricks file system. Permissions to folders are granted directly to the data engineers. You need to recommend a design for the planned Databrick deployment. The solution must meet the following requirements: Ensure that the data engineers can only access folders to which they have permissions. Minimize development effort. Minimize costs. What should you include in the recommendation?
 
 ![Question 51](images/question51.png)
 
@@ -1518,14 +1518,3 @@ policy is [answer choice]: 1 day.
 - [ ] The Log Analytics agent.
 - [x] The Azure Monitor agent.
 - [ ] The Azure Connected Machine agent.
- 
-### Which groups can you add lo Group3 and Groups? Group5. [...].
-
-![Question 282](images/question281_282.jpg)
-
-- [ ] Group1 only.
-- [ ] Group4 only.
-- [x] Group6 only.
-- [ ] Group2 and Group4 only.
-- [ ] Group1 and Group6 only.
-
