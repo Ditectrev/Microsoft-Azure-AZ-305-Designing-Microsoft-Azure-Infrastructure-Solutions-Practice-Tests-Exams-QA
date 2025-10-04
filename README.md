@@ -142,7 +142,7 @@ Bluepprint assignments:
 
 ### The on-premises network contains a single Active Directory domain named contoso.com. Contoso has a single Azure subscription. Contoso has a business partnership with Fabrikam, Inc. Fabrikam users access some Contoso applications over the internet by using Azure Active Directory (Azure AD) guest accounts. Contoso plans to deploy two applications named App1 and App2 to Azure. App1 will be a Python web app hosted in Azure App Service that requires a Linux runtime. Users from Contoso and Fabrikam will access App1. App1 will access several services that require third-party credentials and access strings. The credentials and access strings are stored in Azure Key Vault. App1 will have six instances: three in the East US Azure region and three in the West Europe Azure region. App1 has the following data requirements: Each instance will write data to a data store in the same availability zone as the instance. Data written by any App1 instance must be visible to all App1 instances. App1 will only be accessible from the internet. App1 has the following connection requirements: Connections to App1 must pass through a web application firewall (WAF). Connections to App1 must be active-active load balanced between instances. All connections to App1 from North America must be directed to the East US region. All other connections must be directed to the West Europe region. Every hour, you will run a maintenance task by invoking a PowerShell script that copies files from all the App1 instances. The PowerShell script will run from a central location. App2 will be a NET app hosted in App Service that requires a Windows runtime. App2 has the following file storage requirements: Save files to an Azure Storage account. Replicate files to an on-premises location. Ensure that on-premises clients can read the files over the LAN by using the SMB protocol. You need to monitor App2 to analyze how long it takes to perform different transactions within the application. The solution must not require changes to the application code. Application developers will constantly develop new versions of App1 and App2. The development process must meet the following requirements: A staging instance of a new application version must be deployed to the application host before the new version is used in production. After testing the new version, the staging version of the application will replace the production version. The switch to the new application version from staging to production must occur without any downtime of the application. Contoso identifies the following requirements for managing Fabrikam access to resources: Every month, an account manager at Fabrikam must review which Fabrikam users have access permissions to App1. Accounts that no longer need permissions must be removed as guests. The solution must minimize development effort. All secrets used by Azure services must be stored in Azure Key Vault. Services that require credentials must have the credentials tied to the service instance. The credentials must NOT be shared between services. What should you implement to meet the identity requirements?
 
-![Question 3](images/question3.jpg)
+![Question 2](images/question2.jpg)
 
 - [ ] Service: Azure Automation. Feature: Access reviews.
 - [x] Service: The Azure AD Privileged Identity Management (PIM). Feature: Access reviews.
@@ -170,7 +170,7 @@ Bluepprint assignments:
 
 - [ ] Security: Azure AD Privileged Identity Management. Development: Azure AD Connect. Quality Assurance: Azure AD Identity Protection.
 - [ ] Security: Azure AD Identity Protection. Development: Azure AD Connect. Quality Assurance: Privileged Identity Management.
-- [x] Security: Azure AD Privileged Identity Management. Development: Azure AD Managed Service Identity. Quality Assurance: Azure AD Privileged Identity Management.
+- [x] Security: Azure AD Privileged Identity Management. Development: Azure Managed Identity. Quality Assurance: Azure AD Privileged Identity Management.
 - [ ] Security: Azure AD Identity Protection. Development: Azure AD Managed Service Identity. Quality Assurance: Azure AD Connect.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -199,7 +199,7 @@ Bluepprint assignments:
 
 - [ ] Authenticate App1 by using: A service principal. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
 - [ ] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
-- [x] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: An access policy.
+- [x] Authenticate App1 by using: A system-assigned managed identity. Authorize App1 to retrieve Key Vault secrets by using: A role assignment.
 - [ ] Authenticate App1 by using: A service principal. Authorize App1 to retrieve Key Vault secrets by using: An access policy.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -208,7 +208,7 @@ Bluepprint assignments:
 
 ![Question 9](images/question9.jpg)
 
-- [x] Azure Traffic Manager: 2. Azure Application Gateway: 1.
+- [x] Azure Traffic Manager: 1. Azure Application Gateway: 2.
 - [ ] Azure Traffic Manager: 3. Azure Application Gateway: 1.
 - [ ] Azure Traffic Manager: 6. Azure Application Gateway: 3.
 - [ ] Azure Traffic Manager: 1. Azure Application Gateway: 6.
@@ -221,17 +221,17 @@ Bluepprint assignments:
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager resource deployment in your subscription. What should you include in the recommendation?
 
-- [x] Azure Activity Log.
+- [x] Azure Log Activity.
 - [ ] Azure Monitor action groups.
 - [ ] Azure Advisor.
-- [ ] Azure Monitor metrics.
+- [ ] Azure Arc.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -295,10 +295,10 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You need to recommend a strategy for the web tier of WebApp1. The solution must minimize. What should you recommend?
 
-- [x] Create a runbook that resizes virtual machines automatically to a smaller size outside of business hours.
+- [ ] Create a runbook that resizes virtual machines automatically to a smaller size outside of business hours.
 - [ ] Configure the Scale Up settings for a web app.
 - [ ] Deploy a virtual machine scale set that scales out on a 75 percent CPU threshold.
-- [ ] Configure the Scale Out settings for a web app.
+- [x] Configure the Scale Out settings for a web app.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -311,25 +311,14 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Azure Service Management.
 - [x] Microsoft identity platform.
 
-**[⬆ Back to Top](#table-of-contents)**
-
-### Litware, Inc. is a medium-sized finance company. Litware has a main office in Boston. The network contains an Active Directory forest named Litware.com that is linked to an Azure Active Directory (Azure AD) tenant named Litware.com. All users have Azure Active Directory Premium P2 licenses. Litware has a second Azure AD tenant named dev.Litware.com that is used as a development environment. The Litware.com tenant has a conditional acess policy named capolicy1. Capolicy1 requires that when users manage the Azure subscription for a production environment by using the Azure portal, they must connect from a hybrid Azure AD-joined device. Litware has 10 Azure subscriptions that are linked to the Litware.com tenant and five Azure subscriptions that are linked to the dev.Litware.com tenant. All the subscriptions are in an Enterprise Agreement (EA). The Litware.com tenant contains a custom Azure role-based access control (Azure RBAC) role named Role1 that grants the DataActions read permission to the blobs and files in Azure Storage. The on-premises network of Litware contains the resources shown in the following table. Litware has ExpressRoute connectivity to Azure. Litware plans to implement the following changes: Migrate DB1 and DB2 to Azure. Migrate App1 to Azure virtual machines. Deploy the Azure virtual machines that will host App1 to Azure dedicated hosts. Litware identifies the following authentication and authorization requirements: Users that manage the production environment by using the Azure portal must connect from a hybrid Azure AD-joined device and authenticate by using Azure Multi-Factor Authentication (MFA). The Network Contributor built-in RBAC role must be used to grant permission to all the virtual networks in all the Azure subscriptions. To access the resources in Azure, App1 must use the managed identity of the virtual machines that will host the app. Role1 must be used to assign permissions to the storage accounts of all the Azure subscriptions. RBAC roles must be applied at the highest level possible. Litware identifies the following resiliency requirements: Once migrated to Azure, DB1 and DB2 must meet the following requirements: Maintain availability if two availability zones in the local Azure region fail. Fail over automatically. Minimize I/O latency. App1 must meet the following requirements: Be hosted in an Azure region that supports availability zones. Be hosted on Azure virtual machines that support automatic scaling. Maintain availability if two availability zones in the local Azure region fail. Litware identifies the following security and compliance requirements: Once App1 is migrated to Azure, you must ensure that new data can be written to the app, and the modification of new and existing data is prevented for a period of three years. On-premises users and services must be able to access the Azure Storage account that will host the data in App1. Access to the public endpoint of the Azure Storage account that will host the App1 data must be prevented. All Azure SQL databases in the production environment must have Transparent Data Encryption (TDE) enabled. App1 must not share physical hardware with other workloads. Litware identifies the following business requirements: Minimize administrative effort. Minimize costs. You plan to migrate App1 to Azure. You need to recommend a network connectivity solution for the Azure Storage account that will host the App1 data. The solution must meet the security and compliance requirements. What should you include in the recommendation?
-
-![Question 20](images/question1_17_19_20_30_41.jpg)
-
-- [x] A private endpoint.
-- [ ] A service endpoint that has a service endpoint policy.
-- [ ] Azure public peering for an ExpressRoute circuit.
-- [ ] Microsoft peering for an ExpressRoute circuit.
-
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)
 
 ### You need to ensure that users managing the production environment are registered for Azure MFA and must authenticate by using Azure MFA when they sign in to the Azure portal. The solution must meet the authentication and authorization requirements. What should you do?
 
 ![Question 21](images/question21.jpg)
 
-- [x] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Sign-in nsk policy in Azure AD Identity Protection for the Litware.com tenant.
-- [ ] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Grant control in capolicy1.
+- [ ] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Sign-in nsk policy in Azure AD Identity Protection for the Litware.com tenant.
+- [x] To register the users for Azure MFA, use: Azure AD Identity Protection. To enforce Azure MFA authertication, configure: Grant control in capolicy1.
 - [ ] To register the users for Azure MFA, use:Secunty defaults in Azure AD. configure: Session control in capolicy1.
 - [ ] To register the users for Azure MFA, use: Per-user MFA in the MFA management Ul. configure: Grant control in capolicy1.
 
@@ -337,9 +326,9 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You need to recommend an App Service architecture that meets the requirements for Appl. The solution must minimize costs. What should few recommend?
 
-- [x] One App Service Environment (ASE) per availability zone.
+- [ ] One App Service Environment (ASE) per availability zone.
 - [ ] One App Service plan per availability zone.
-- [ ] One App Service plan per region.
+- [x] One App Service plan per region.
 - [ ] One App Service Environment (ASE) per region.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -430,16 +419,7 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 - [ ] Yes.
 - [x] No.
 
-**[⬆ Back to Top](#table-of-contents)**
-
-### What should you include in the recommendation? [???]
-
-- [ ] A Recovery Services vault and Azure Backup.
-- [x] An Azure file share and Azure File Sync.
-- [ ] Azure blob containers and Azure File Sync.
-- [ ] A Recovery Services vault and Windows Server Backup.
-
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)
 
 ### You plan to migrate App1 to Azure. You need to recommend a high-availability solution for App1. The solution must meet the resiliency requirements. What should you include in the recommendation?
 
@@ -535,10 +515,10 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### You plan to migrate App1 to Azure. The solution must meet the authentication and authorization requirements. Which type of endpoint should App1 use to obtain an access token?
 
-- [ ] Azure Instance Metadata Service (IMDS).
+- [x] Azure Instance Metadata Service (IMDS).
 - [ ] Azure AD.
 - [ ] Azure Service Management.
-- [x] Microsoft identity platform.
+- [ ] Microsoft identity platform.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -631,15 +611,15 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is being deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity. Several virtual machines exhibit network connectivity issues. You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines. Solution: Use Azure Advisor to analyze the network traffic.
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -809,8 +789,8 @@ Locally-redundant storage (LRS) replication. Application2: General purpose v2 wi
 ![Question 71 part 2](images/question69_70_71_2.png)
 ![Question 71 part 3](images/question69_70_71_3.png)
 
-- [x] Yes.
-- [ ] No.
+- [ ] Yes.
+- [x] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -842,7 +822,7 @@ policy is [answer choice]: 1 day.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-###  You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you create an Azure Traffic Manager profile. Does this meet the goal?
+### You need to deploy resources to host a stateless web app in an Azure subscription. The solution must meet the following requirements: Provide access to the full .NET framework. Provide redundancy if an Azure region fails. Grant administrators access to the operating system to install custom application dependencies. Solution: You deploy two Azure virtual machines to two Azure regions, and you create an Azure Traffic Manager profile. Does this meet the goal?
 
 - [x] Yes.
 - [ ] No.
@@ -905,7 +885,7 @@ policy is [answer choice]: 1 day.
 
 ### Your company has the infrastructure shown in the following table. The on-premises Active Directory domain syncs with Azure Active Directory (Azure AD). Server1 runs an application named App1 that uses LDAP queries to verify user identities in the on-premises Active Directory domain. You plan to migrate Server1 to a virtual machine in Subscription1. A company security policy states that the virtual machines and services deployed to Subscription1 must be prevented from accessing the on-premises network. You need to recommend a solution to ensure that App1 continues to function after the migration. The solution must meet the security policy. What should you include in the recommendation?
 
-![Question 81](images/question81.png)
+![Question 78](images/question78.png)
 
 - [ ] Azure AD Application Proxy.
 - [ ] The Active Directory Domain Services role on a virtual machine.
@@ -917,8 +897,8 @@ policy is [answer choice]: 1 day.
 ### You need to design a solution that will execute custom C# code in response to an event routed to Azure Event Grid. The solution must meet the following requirements: The executed code must be able to access the private IP address of a Microsoft SQL Server instance that runs on an Azure virtual machine. Costs must be minimized. What should you include in the solution?
 
 - [ ] Azure Logic Apps in the Consumption plan.
-- [ ] Azure Functions in the Premium plan.
-- [x] Azure Functions in the Consumption plan.
+- [x] Azure Functions in the Premium plan.
+- [ ] Azure Functions in the Consumption plan.
 - [ ] Azure Logic Apps in the integrated service environment.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -934,8 +914,8 @@ policy is [answer choice]: 1 day.
 
 ### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 1: The API is available to partners over the internet.
 
-![Question 84 part 1](images/question84_85_86_1.png)
-![Question 84 part 2](images/question84_85_86_2.jpg)
+![Question 81 part 1](images/question81_82_83_1.png)
+![Question 81 part 2](images/question81_82_83_2.jpg)
 
 - [x] Yes.
 - [ ] No.
@@ -944,8 +924,8 @@ policy is [answer choice]: 1 day.
 
 ### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 2: The APIM instance can access real-time data from VM1.
 
-![Question 85 part 1](images/question84_85_86_1.png)
-![Question 85 part 2](images/question84_85_86_2.jpg)
+![Question 82 part 1](images/question81_82_83_1.png)
+![Question 82 part 2](images/question81_82_83_2.jpg)
 
 - [x] Yes.
 - [ ] No.
@@ -954,8 +934,8 @@ policy is [answer choice]: 1 day.
 
 ### Your company develops a web service that is deployed to an Azure virtual machine named VM1. The web service allows an API to access real-time data from VM1. The current virtual machine deployment is shown in the Deployment exhibit. The chief technology officer (CTO) sends you the following email message: 'Our developers have deployed the web service to a virtual machine named VM1. Testing has shown that the API is accessible from VM1 and VM2. Our partners must be able to connect to the API over the Internet. Partners will use this data in applications that they develop.' You deploy an Azure API Management (APIM) service. The relevant API Management configuration is shown in the API exhibit. Question 3: A VPN gateway is required for partner access.
 
-![Question 86 part 1](images/question84_85_86_1.png)
-![Question 86 part 2](images/question84_85_86_2.jpg)
+![Question 83 part 1](images/question81_82_83_1.png)
+![Question 83 part 2](images/question81_82_83_2.jpg)
 
 - [ ] Yes.
 - [x] No.
@@ -964,7 +944,7 @@ policy is [answer choice]: 1 day.
 
 ### Your company has an existing web app that runs on Azure virtual machines. You need to ensure that the app is protected from SQL injection attempts and uses a layer-7 load balancer. The solution must minimize disruptions to the code of the app. What should you recommend?
 
-![Question 87](images/question87.png)
+![Question 84](images/question84.png)
 
 - [ ] Azure service: Azure Application Gateway. Feature: SSL offloading.
 - [ ] Azure service: Azure Traffic Manager. Feature: Web Application Firewall (WAF).
@@ -993,21 +973,21 @@ policy is [answer choice]: 1 day.
 
 ### You have the Azure resources shown in the following table. You need to deploy a new Azure Firewall policy that will contain mandatory rules for all Azure Firewall deployments. The new policy will be configured as a parent policy for the existing policies. What is the minimum number of additional Azure Firewall policies you should create?
 
-![Question 90](images/question90.png)
+![Question 87](images/question87.png)
 
 - [ ] 0.
-- [x] 1.
+- [ ] 1.
 - [ ] 2.
-- [ ] 3.
+- [x] 3.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company has an app named App1 that uses data from the on-premises Microsoft SQL Server databases shown in the following table. App1 and the data are used on the first day of the month only. The data is not expected to grow more than 3% each year. The company is rewriting App1 as an Azure web app and plans to migrate all the data to Azure. You need to migrate the data to Azure SQL Database. The solution must minimize costs. Which service tier should you use?
 
-![Question 91](images/question91.png)
+![Question 88](images/question88.png)
 
-- [ ] vCore-based General Purpose.
-- [x] DTU-based Standard.
+- [x] vCore-based General Purpose.
+- [ ] DTU-based Standard.
 - [ ] vCore-based Business Critical.
 - [ ] DTU-based Basic.
 
@@ -1034,15 +1014,15 @@ policy is [answer choice]: 1 day.
 ### You plan provision a High Performance Computing (HPC) cluster in Azure that will use a third-party scheduler. You need to recommend a solution to provision and manage the HPC cluster node. What should you include in the recommendation?
 
 - [ ] Azure Automation.
-- [ ] Azure CycleCloud.
-- [x] Azure Purview.
+- [x] Azure CycleCloud.
+- [ ] Azure Purview.
 - [ ] Azure Lighthouse
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are designing an Azure App Service web app. You plan to deploy the web app to the North Europe Azure region and the West Europe Azure region. You need to recommend a solution for the web app. The solution must meet the following requirements: Users must always access the web app from the North Europe region, unless the region fails. The web app must be available to users if an Azure region is unavailable. Deployment costs must be minimized. What should you include in the recommendation?
 
-![Question 95](images/question95.png)
+![Question 92](images/question92.png)
 
 - [x] Request routing method: A Traffic Manager profile. Request routing configuration: Priority traffic routing.
 - [ ] Request routing method: Azure Application Gateway. Request routing configuration: Priority traffic routing.
@@ -1053,7 +1033,7 @@ policy is [answer choice]: 1 day.
 
 ### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 2: The design supports autoscaling.
 
-![Question 96](images/question96.jpg)
+![Question 93](images/question93.jpg)
 
 - [x] Yes.
 - [ ] No.
@@ -1062,7 +1042,7 @@ policy is [answer choice]: 1 day.
 
 ### You design a solution for the web tier of WebApp1 as shown in the exhibit. Question 3: The design requires a manual configuration if an Azure region fails.
 
-![Question 97](images/question97.jpg)
+![Question 94](images/question94.jpg)
 
 - [ ] Yes.
 - [x] No.
@@ -1190,7 +1170,7 @@ policy is [answer choice]: 1 day.
 
 ### You have the resources shown in the following table: CDB1 hosts a container that stores continuously updated operational data. You are designing a solution that will use AS1 to analyze the operational data daily. You need to recommend a solution to analyze the data without affecting the performance of the operational data store. What should you include in the recommendation?
 
-![Question 26](images/question26.png)
+![Question 113](images/question113.png)
 
 - [ ] Azure Cosmos DB change feed.
 - [ ] Azure Data Factory with Azure Cosmos DB and Azure Synapse Analytics connectors.
@@ -1235,7 +1215,7 @@ policy is [answer choice]: 1 day.
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
 
-![Question 32](images/question32.jpg)
+![Question 119](images/question119.jpg)
 
 - [ ] Configure the Azure AD provisioning service.
 - [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
@@ -1263,21 +1243,11 @@ policy is [answer choice]: 1 day.
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
 
-![Question 37](images/question37.png)
+![Question 123](images/question123.png)
 
 - [ ] Configure Azure AD join.
 - [x] Use Azure AD entitlement management to govern external users.
 - [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
-- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
-
-
-### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
-
-![Question 38](images/question38.png)
-
-- [ ] Configure Azure AD join.
-- [ ] Configure Azure AD Identity Protection.
-- [x] Use Azure AD entitlement management to govern external users.
 - [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
@@ -1301,7 +1271,7 @@ policy is [answer choice]: 1 day.
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
 
-![Question 41](images/question41.png)
+![Question 127](images/question127.png)
 
 - [ ] Configure Azure AD join.
 - [ ] Configure Azure AD Identity Protection.
@@ -1320,24 +1290,6 @@ policy is [answer choice]: 1 day.
 - [ ] Azure role-based access control (Azure RBAC).
 - [x] Delegated permissions.
 
-### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
-
-![Question 44](images/question44.png)
-
-- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
-- [x] Use Azure AD entitlement management to govern external users.
-- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
-- [ ] Configure Azure AD Identity Protection.
-
-###  Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
-
-[Question 45](images/question45.png)
-
-- [ ] Configure the Azure AD provisioning service.
-- [ ] Enable Azure AD pass-through authentication and update the sign-in endpoint.
-- [x] Configure Supported account types in the application registration and update the sign-in endpoint.
-- [ ] Configure Azure AD join.
-
 ### User2 can grant permissions to Group2.
 
 - [ ] Yes.
@@ -1347,16 +1299,6 @@ policy is [answer choice]: 1 day.
 
 - [x] Yes.
 - [ ] No.
-
-
-### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
-
-[Question 47](images/question47.png)
-
-- [ ] Configure Azure AD Identity Protection.
-- [ ] Configure assignments for the fabrikam.com users by using Azure AD Privileged Identity Management (PIM).
-- [x] Configure Supported account types in the application registration and update the sign-in endpoint.
-- [ ] Configure a Conditional Access policy.
 
 ### Your company has the divisions shown in the following table. Sub1 contains an Azure App Service web app named App1. App1 uses Azure AD for single-tenant user authentication. Users from contoso.com can authenticate to App1. You need to recommend a solution to enable users in the fabrikam.com tenant to authenticate to App1. What should you recommend?
 
@@ -1371,13 +1313,6 @@ policy is [answer choice]: 1 day.
 - [x] Azure Policy and tags.
 - [ ] administrative units and Azure Lighthouse.
 - [ ] resource groups and role assignments.
-
-### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
-
-- [ ] Azure Arc
-- [ ] Azure Monitor metrics
-- [ ] Azure Advisor
-- [x] Azure Log Analytics
 
 ### You need to recommend a solution to generate a monthly report of all the new Azure Resource Manager (ARM) resource deployments in your Azure subscription. What should you include in the recommendation?
 
